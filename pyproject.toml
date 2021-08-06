@@ -5,14 +5,15 @@ description = "Магазин книг"
 authors = ["a.zhvkova@yandex.ru"]
 
 [tool.poetry.dependencies]
-python = "^3.7"
-Flask = "^2.0.1"
+python = "^3.9"
 SQLAlchemy = "^1.4.22"
 marshmallow = "^3.13.0"
 ujson = "^4.0.2"
 flask-apispec = "^0.11.0"
 Flask-SQLAlchemy = "^2.5.1"
-requests = "^2.26.0"
+mysql-client = "^0.0.1"
+PyMySQL = "^1.0.2"
+Flask = "^2.0.1"
 
 [tool.poetry.dev-dependencies]
 

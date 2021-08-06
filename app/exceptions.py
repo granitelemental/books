@@ -1,4 +1,4 @@
-from web.app.constants import HttpStatus
+from app.constants import HttpStatus
 from typing import Optional
 
 class BookStoreException(Exception):

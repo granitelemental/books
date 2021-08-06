@@ -1,18 +1,19 @@
 services:
   api:
-    build: ""
+    container_name: books_store
+    build: .
     ports:
       - "5000:5000"
     depends_on:
       - mariadb
-  db:
-    image: mariadb
+
+  mariadb:
+    image: mariadb:10.3
     container_name: mariadb
-    environment:
-      DB_USER: root
-      DB_PASSWORD: root
-      DB_DATABASE: books_store
-      DB_PORT: 3306
-      DB_HOST: 127.0.0.1
     ports:
-    - "3306:3306"
+        - "3306:3306"
+    environment:
+      MYSQL_USER: root
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: db
+      SQLALCHEMY_TRACK_MODIFICATIONS: 0

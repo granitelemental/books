@@ -2,6 +2,13 @@
 class ErrorMessages:
     USER_NOT_FOUND = 'Пользователя с айди {} не существует'
     ORDER_EMPTY_OR_NOT_FOUND = 'Заказ с айди {} либо не существует, либо пустой'
+    SHOP_NOT_FOUND = 'Магазин с айди {} не существует'
+    BOOK_NOT_FOUND = 'Книга с айди {} не существует'
+    USER_ALREADY_EXISTS = 'Пользователь с такими данными уже существует'
+    SHOP_ALREADY_EXISTS = 'Магазин с такими данными уже существует'
+    CAN_NOT_ADD_ORDER = 'Не удалось добавить заказ в базу'
+    CAN_NOT_ADD_BOOK = 'Не удалось добавить книгу в базу'
+    CAN_NOT_ADD_SHOP = 'Не удалось добавить магазин в базу'
 
 
 MAX_ROWS = 100
